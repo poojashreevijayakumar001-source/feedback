@@ -1,0 +1,29 @@
+:root{--bg:#fdf6f7;--ink:#2a1218;--muted:#80636a;--brand:#e11d48;--line:#f0dde1;--card:#fff}
+@media(prefers-color-scheme:dark){:root{--bg:#190b0f;--ink:#f8e8ec;--muted:#b399a0;--brand:#fb7185;--line:#3a1c25;--card:#241217}}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--ink)}
+.wrap{max-width:860px;margin:0 auto;padding:24px 16px}
+header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
+h1{margin:0;font-size:1.5rem;color:var(--brand)}h3{margin:0}
+.muted{color:var(--muted);margin-right:12px}.small{font-size:.8rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;margin-bottom:14px}
+input,select,textarea{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);font:inherit}
+.btn{background:var(--brand);color:#fff;border:0;padding:10px 16px;border-radius:10px;cursor:pointer;font:inherit;font-weight:600}
+.btn.ghost{background:transparent;color:var(--brand);border:1px solid var(--brand)}.btn.sm{padding:8px 12px}
+.err{color:#dc2626;margin-bottom:12px}.ok{color:#16a34a;margin-bottom:12px}
+.stack{display:grid;gap:12px}.row{display:flex;gap:10px;align-items:center}
+.auth{min-height:100vh;display:grid;place-items:center;padding:16px}
+.auth .card{width:100%;max-width:380px;display:grid;gap:12px}
+.link{color:var(--brand);cursor:pointer;text-align:center;font-size:.9rem}
+.stars{font-size:1.5rem;color:var(--line);white-space:nowrap;letter-spacing:2px}.stars .on{color:#f59e0b}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin-bottom:16px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;color:var(--muted)}
+.stat b{display:block;font-size:1.7rem;color:var(--brand)}
+.filter{max-width:220px;margin-bottom:14px}
+.head{display:flex;justify-content:space-between;align-items:center}
+.item p{margin:10px 0}
+.chip{background:var(--bg);border:1px solid var(--line);border-radius:99px;padding:3px 10px;font-size:.78rem;margin-right:8px}
+.tag{padding:3px 10px;border-radius:99px;font-size:.78rem;font-weight:600}
+.tag.New{background:#fef3c7;color:#92400e}.tag.Reviewed{background:#dbeafe;color:#1e40af}.tag.Resolved{background:#dcfce7;color:#166534}
+.reply{margin-top:10px;padding:10px 12px;border-left:3px solid var(--brand);background:var(--bg);border-radius:6px;font-size:.9rem}
+.admin{margin-top:12px}.admin select{max-width:140px}
